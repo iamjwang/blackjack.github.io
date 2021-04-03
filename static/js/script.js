@@ -129,7 +129,7 @@ function showScore(activePlayer) {
 async function dealerLogic() {
     blackjackGame['isStand'] = true;
 
-    while (DEALER['score'] < 16 && blackjackGame['isStand']) {
+    while (DEALER['score'] < 18 && blackjackGame['isStand']) {
         let card = randomCard();
         showCard(card, DEALER);
         updateScore(card, DEALER);
@@ -196,6 +196,9 @@ function computeWinner() {
 }
 
 function showDecisionScore() {    
+    document.querySelector(blackjackGame['decision']['winSpan']).style.color = 'white';
+    document.querySelector(blackjackGame['decision']['drawSpan']).style.color = 'white';
+    document.querySelector(blackjackGame['decision']['lossSpan']).style.color = 'white';
     document.querySelector(blackjackGame['decision']['winSpan']).textContent = blackjackGame['decision']['winScore'];
     document.querySelector(blackjackGame['decision']['drawSpan']).textContent = blackjackGame['decision']['drawScore'];
     document.querySelector(blackjackGame['decision']['lossSpan']).textContent = blackjackGame['decision']['lossScore'];

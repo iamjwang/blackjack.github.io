@@ -1,5 +1,4 @@
 .container-1, .container-2, .container-3, .container-5 {
-    border: 1px black solid;
     margin: 0 auto;
     width: 75%;
     text-align: center;
@@ -13,7 +12,7 @@
     justify-content: space-around;
 }
 
-.flex-blackjack-row-1, .flex-blackjack-row-2 {
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3 {
     background: url('https://t4.ftcdn.net/jpg/03/62/05/31/360_F_362053188_oQ0WRHCFkIY4QlXS1S5d1i9bpYup67ll.jpg');
     color: #ffffff;
 }
@@ -51,7 +50,7 @@
 
 table, th, td {
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .flex-box-rps img:hover {
