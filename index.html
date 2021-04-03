@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Age In Days Calculator</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Age In Days Calculator</h2>
+        <div class="flex-box-1"> 
+            <div id="button-1">
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+
+            <div id="button-2">
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <padding></padding>
+        <div class="flex-box-1">
+            <div id="flex-container-result"></div>
+        </div>
+
+    </div>
+
+    <div class="container-2">
+        <h2>Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div class="flex-box-2" id="flex-cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://img.icons8.com/emoji/452/rock-emoji.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://pics.freeicons.io/uploads/icons/png/2679458861538117042-512.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Scissors_icon_black.svg/1024px-Scissors_icon_black.svg.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button id="blackjack-hit-button" class="btn-lg btn-primary mr-2">Hit</button>
+                <button id="blackjack-stand-button" class="btn-lg btn-warning mr-2">Stand</button>
+                <button id="blackjack-deal-button" class="btn-lg btn-danger">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr> 
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="static/js/script.js"></script>    
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCxvwqK1AP--tl1qRfqmOkHTVyAuSjFyqU",
+      authDomain: "blackjack-blockchain.firebaseapp.com",
+      projectId: "blackjack-blockchain",
+      storageBucket: "blackjack-blockchain.appspot.com",
+      messagingSenderId: "373831239975",
+      appId: "1:373831239975:web:04b8f9b269269e28bcc102",
+      measurementId: "G-C92X5P5V04"
+    };
+</body>
+</html>

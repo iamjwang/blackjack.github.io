@@ -1,0 +1,59 @@
+.container-1, .container-2, .container-3, .container-5 {
+    border: 1px black solid;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.flex-box-1, .flex-box-2, .flex-box-rps, .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+    background: url('https://t4.ftcdn.net/jpg/03/62/05/31/360_F_362053188_oQ0WRHCFkIY4QlXS1S5d1i9bpYup67ll.jpg');
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+    padding: 10px;
+    height: 350px;
+    border: 1.5px black solid;
+    flex: 1;
+    text-align: center;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-box-1 div {
+    padding: 10px;
+    align-items: center;
+}
+
+.flex-box-2 img {
+    margin: 10px;
+    box-shadow: 10px 11px 21px 10px rgba(0,0,0,0.65);
+}
+
+.flex-blackjack-row-2 button {
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div {
+    padding: 10px;
+}
+
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.flex-box-rps img:hover {
+    box-shadow: 10px 11px 21px 10px rgba(0,0,180,0.65);
+}
